@@ -1,5 +1,4 @@
 import './nav.html';
-import '../../stylesheets/home.less';
 
 Template.nav.onCreated(function () {
   console.log("started");
@@ -12,8 +11,10 @@ Template.nav.helpers({
 });
 
 Template.nav.events({
-  'submit .info-link-add'(event) {
-    event.preventDefault();
-
+  'click img'(event) {
+    let islandId = event.target.id;
+     FlowRouter.go('/' + islandId);
+    
   },
+
 });
