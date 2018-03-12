@@ -12,9 +12,10 @@ Template.nav.helpers({
 
 Template.nav.events({
   'click img'(event) {
+
     let islandId = event.target.id;
-     FlowRouter.go('/' + islandId);
-    
+    FlowRouter.go('/' + islandId);
+
   },
 
 });
