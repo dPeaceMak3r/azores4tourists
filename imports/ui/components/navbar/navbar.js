@@ -1,16 +1,16 @@
-import './nav.html';
+import './navbar.html';
 
-Template.nav.onCreated(function () {
+Template.navbar.onCreated(function () {
   console.log("started");
 });
 
-Template.nav.helpers({
+Template.navbar.helpers({
   sayHello() {
     console.log("hello");
   },
 });
 
-Template.nav.events({
+Template.navbar.events({
   'click img'(event) {
 
     let islandId = event.target.id;
