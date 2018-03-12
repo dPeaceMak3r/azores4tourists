@@ -5,6 +5,7 @@ import '/imports/startup/both';
 
 
 Meteor.startup(function(){
+
     Accounts.onCreateUser(function(options, user){
         if (options.profile){
             user.profile = options.profile;
@@ -14,4 +15,5 @@ Meteor.startup(function(){
             `http://graph.facebook.com/${user.services.facebook.id}/picture/?type=small`;
         return user;
     })
+
 });
