@@ -7,7 +7,7 @@ import { assert } from 'chai';
 import { Links } from './links.js';
 
 if (Meteor.isServer) {
-  describe('links collection', function () {
+  describe('posts collection', function () {
     it('insert correctly', function () {
       const linkId = Links.insert({
         title: 'meteor homepage',

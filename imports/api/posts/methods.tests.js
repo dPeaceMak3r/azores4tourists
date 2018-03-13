@@ -8,7 +8,7 @@ import { Links } from './links.js';
 import './methods.js';
 
 if (Meteor.isServer) {
-  describe('links methods', function () {
+  describe('posts methods', function () {
     beforeEach(function () {
       Links.remove({});
     });

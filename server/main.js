@@ -17,3 +17,14 @@ Meteor.startup(function () {
           return user;
      })
 });
+
+
+Meteor.methods({
+     'submitPost': function ( title , body ){
+
+          Posts.insert({
+               title: title,
+               body: body
+          })
+     }
+});
